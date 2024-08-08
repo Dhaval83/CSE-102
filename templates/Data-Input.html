@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Details</title>
+        <script>
+
+            function dataCheck()
+            {
+                 var a = document.getElementById("fname").value.length;
+                 if(a==0)
+                 {
+                    alert("Enter Your Name ");
+                    return false;
+                 }
+                 var b = document.getElementById("age").value.length;
+                 if(b==0)
+                 {
+                    alert("Enter Your Age ");
+                    return false;
+                 }
+            }
+        </script>
+    </head>
+<body>
+
+<form name="frmmain" action="viewdata2" method="POST">
+  <label for="fname">Enter Name :</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Enter Your Age:</label><br>
+  <input type="text" id="age" name="age" value=""><br><br>
+  <input type="submit" value="Submit" onclick="return dataCheck()" onsubmit="return dataCheck()">
+</form> 
+</body>
+</html>
+

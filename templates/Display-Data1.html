@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Details</title>
+        
+    </head>
+<body>
+<h1>You name is {{ fullname }}</h1>
+{% block body %}
+  {% if age > 18 %}
+    
+<p style="color: green; font-size: 30px;"> Congratulations!! You are Elligible for Voting </p>
+   
+  {% else %}
+        
+  <p style="color: red; font-size: 30px;"> Sorry !! You can not Vote  </p>
+ 
+  {% endif %}
+{% endblock %}
+</body>
+</html>
+
